@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
-
-
-
-    <style type="text/css">
-
-        .crystal-image {
-          width: 300px;
-          height: 300px;
-        }
-      </style>
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
 </head>
+
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        
-        <div id="crystals">
-            <img src 
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-md-4">
+                <h4>User Score: <span id="userscore"></span></h4>
+            </div>
+            <div class="col-md-4">
+                    <h4>Target Score: <span id="targetscore"></span></h4>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                    <img class="img-responsive Diamond" data-color="pink" src="Assets/Images/pink diamond.jpeg" alt="Pink Diamond">
+            </div>
 
+            <div class="col-md-3">
+                    <img class="img-responsive Diamond" data-color="blue" src="Assets/Images/blue diamond.png" alt="Blue Diamond">
+            </div>
 
+            <div class="col-md-3">
+                    <img class="img-responsive Diamond" data-color="green" src="Assets/Images/green diamond.jpg" alt="Green Diamond">
+            </div>
 
+            <div class="col-md-3">
+                    <img class="img-responsive Diamond" data-color="red" src="Assets/Images/red diamond.png" alt="Red Diamond">
+            </div>
+        </div>
+    </div>
 
+   <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script> 
+   <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script src="Assets/JavaScript/game.js"></script>
 </body>
+
 </html>
