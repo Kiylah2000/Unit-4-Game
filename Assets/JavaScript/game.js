@@ -6,10 +6,10 @@
     var loss = 0;
 
     function reset(){
-     pink = Math.floor(Math.random()*12)+1;
+    pink = Math.floor(Math.random()*12)+1;
     blue = Math.floor(Math.random()*12)+1;
     green = Math.floor(Math.random()*12)+1;
-     red = Math.floor(Math.random()*12)+1;
+    red = Math.floor(Math.random()*12)+1;
     userScore = 0;
 
     targetScore = Math.floor(Math.random()*121)+19;
@@ -40,14 +40,53 @@
 
            reset();
        }
-
-
-   }
-
-
-
-  // Clicking the button triggers an alert message.
-  //alert("You clicked a Diamond!");
-
-});
- })
+       if(color==="blue"){
+        userScore += blue;
+        console.log("New user score:"+userScore);
+        $("#uscore").text(userScore);
+ 
+        if(userScore === targetScore){
+            win++;
+ 
+            reset();
+        }
+        
+        if(userScore > targetScore){
+            loss++;
+ 
+            reset();
+        }
+        if(color==="red"){
+            userScore += red;
+            console.log("New user score:"+userScore);
+            $("#uscore").text(userScore);
+     
+            if(userScore === targetScore){
+                win++;
+     
+                reset();
+            }
+            
+            if(userScore > targetScore){
+                loss++;
+     
+                reset();
+            }
+            if(color==="green"){
+                userScore += green;
+                console.log("New user score:"+userScore);
+                $("#uscore").text(userScore);
+         
+                if(userScore === targetScore){
+                    win++;
+         
+                    reset();
+                }
+                
+                if(userScore > targetScore){
+                    loss++;
+         
+                    reset();
+                }
+            }
+        });
