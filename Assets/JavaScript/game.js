@@ -12,8 +12,13 @@
     red = Math.floor(Math.random()*12)+1;
     userScore = 0;
 
-    targetScore = Math.floor(Math.random()*121)+19;
+    console.log("pink: "+pink);
+    console.log("blue: "+blue);
+    console.log("green: "+green);
+    console.log("red: "+red);
 
+    targetScore = Math.floor(Math.random()*121)+19;
+    $("#targetscore").text(targetScore);
     console.log(targetScore);
     }
 
@@ -27,66 +32,78 @@
    if(color==="pink"){
        userScore += pink;
        console.log("New user score:"+userScore);
-       $("#uscore").text(userScore);
+       $("#userscore").text(userScore);
 
        if(userScore === targetScore){
            win++;
-
+           $("#Wins").text(win);
+           $("#userscore").text(0);
            reset();
        }
        
        if(userScore > targetScore){
            loss++;
-
+           $("#Losses").text(loss);
+           $("#userscore").text(0);
            reset();
        }
+    }
        if(color==="blue"){
         userScore += blue;
         console.log("New user score:"+userScore);
-        $("#uscore").text(userScore);
+        $("#userscore").text(userScore);
  
         if(userScore === targetScore){
             win++;
- 
+            $("#Wins").text(win);
+            $("#userscore").text(0);
             reset();
         }
         
         if(userScore > targetScore){
             loss++;
- 
+            $("#Losses").text(loss);
+            $("#userscore").text(0);
             reset();
         }
+    }
         if(color==="red"){
             userScore += red;
             console.log("New user score:"+userScore);
-            $("#uscore").text(userScore);
+            $("#userscore").text(userScore);
      
             if(userScore === targetScore){
                 win++;
-     
+                $("#Wins").text(win);
+                $("#userscore").text(0);
                 reset();
             }
             
             if(userScore > targetScore){
                 loss++;
-     
+                $("#Losses").text(loss);
+                $("#userscore").text(0);
                 reset();
             }
+        }
             if(color==="green"){
                 userScore += green;
                 console.log("New user score:"+userScore);
-                $("#uscore").text(userScore);
+                $("#userscore").text(userScore);
          
                 if(userScore === targetScore){
                     win++;
-         
+                    $("#Wins").text(win);
+                    $("#userscore").text(0);
                     reset();
                 }
                 
                 if(userScore > targetScore){
                     loss++;
-         
+                    $("#Losses").text(loss);
+                    $("#userscore").text(0);
                     reset();
                 }
             }
         });
+    });
