@@ -1,4 +1,19 @@
-
+body {
+    background-image: url(../Images/background.jpg);
+}
 .Diamond {
-    height: 35%;
+    height: 60%;
+    margin-left: 70px;
+}
+
+.container {
+    background-color: gray;
+    color: white;
+    margin-top: 80px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-body {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
 }
