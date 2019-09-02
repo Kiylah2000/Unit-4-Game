@@ -1,5 +1,5 @@
  $(document).ready(function(){
-    var pink, blue, green, red = 0;
+    var pink, purple, green, red = 0;
     var userScore = 0;
     var targetScore = 0;
     var win =0;
@@ -7,13 +7,13 @@
 
     function reset(){
     pink = Math.floor(Math.random()*12)+1;
-    blue = Math.floor(Math.random()*12)+1;
+    purple = Math.floor(Math.random()*12)+1;
     green = Math.floor(Math.random()*12)+1;
     red = Math.floor(Math.random()*12)+1;
     userScore = 0;
 
     console.log("pink: "+pink);
-    console.log("blue: "+blue);
+    console.log("purple: "+purple);
     console.log("green: "+green);
     console.log("red: "+red);
 
@@ -48,8 +48,8 @@
            reset();
        }
     }
-       if(color==="blue"){
-        userScore += blue;
+       if(color==="purple"){
+        userScore += purple;
         console.log("New user score:"+userScore);
         $("#userscore").text(userScore);
  
