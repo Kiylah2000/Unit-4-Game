@@ -2,7 +2,7 @@
 
 # Diamonds are Forever
 
-The objective of this assignment was to build an interactive game where the HTML is dynamically updated using the jQuery library.
+User is given a random number at the start of the game. There are four diamonds displayed on the screen with random hidden values assigned. The user's goal is to try and match the random score displayed by clicking the diamonds buttons. Each time the game restarts the value of each diamond will change.
 
 Click [here](https://kiylah2000.github.io/Unit-4-Game/) to play the game. 
 
